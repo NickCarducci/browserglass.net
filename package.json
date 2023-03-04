@@ -1,0 +1,41 @@
+{
+  "name": "glass",
+  "version": "1.0.0",
+  "description": "Samesite webkit-engine vpn browser and search service-client app",
+  "keywords": [
+    "browser",
+    "webkit engine browser",
+    "vpn",
+    "samesite",
+    "client",
+    "clearcookie",
+    "cookie",
+    "cookies",
+    "clear cookie",
+    "clear cookies"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "page-meta-scraper": "0.1.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-scripts": "4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"],
+  "false": {
+    "measure": "Doesn't a VPN hide your IP address from the host while incognito mode removes set cookies upon close?",
+    "spyvspy": {
+      "stupid": "can we 'scrape' no cookies button?",
+      "rather": "Delete them every time they process"
+    }
+  }
+}
