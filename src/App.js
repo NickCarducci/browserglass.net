@@ -16,10 +16,14 @@ class App extends React.Component {
           ? "0px"
           : "min-content",
       space = " ";
+    console.log(this.state.open);
     return (
       <div className="App">
         <h5 style={{ position: "fixed", bottom: "0px" }}>
-          try keybox.email kyc confidential computing
+          <a href="https://hibit.cc" style={{ color: "white" }}>
+            try
+          </a>
+          {space}keybox.email kyc confidential computing
         </h5>
         <h1
           style={{
@@ -169,7 +173,7 @@ class App extends React.Component {
           {space}(and) VPN{space}
           <input
             type="checkbox"
-            onChange={() => this.setState({ open: e.checked })}
+            onChange={(e) => this.setState({ open: e.target.checked })}
           />
         </h5>
       </div>
