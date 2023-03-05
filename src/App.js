@@ -12,11 +12,15 @@ class App extends React.Component {
 
   render() {
     var height =
-      this.state.website || (this.state.sites && this.state.sites.length > 0)
-        ? "0px"
-        : "min-content";
+        this.state.website || (this.state.sites && this.state.sites.length > 0)
+          ? "0px"
+          : "min-content",
+      space = " ";
     return (
       <div className="App">
+        <h5 style={{ position: "fixed", bottom: "0px" }}>
+          try keybox.email kyc confidential computing
+        </h5>
         <h1
           style={{
             height,
@@ -34,6 +38,16 @@ class App extends React.Component {
         >
           search
         </h4>
+        <h5 style={{ color: "lightgreen" }}>
+          [Your device (Android or Apple) WebKit{space}
+          <a
+            style={{ color: "lightskyblue" }}
+            href="https://doc.rust-lang.org/std/keyword.impl.html"
+          >
+            implementation
+          </a>
+          {space}is closed source]
+        </h5>
         <form
           style={{
             height,
@@ -150,6 +164,14 @@ class App extends React.Component {
                   .innerHTML;*/
           />
         )}
+        <h5 style={{ color: this.state.vpn ? "lightskyblue" : "grey" }}>
+          <span style={{ color: "lightskyblue" }}>SameSite</span>
+          {space}(and) VPN{space}
+          <input
+            type="checkbox"
+            onChange={() => this.setState({ open: e.checked })}
+          />
+        </h5>
       </div>
     );
   }
